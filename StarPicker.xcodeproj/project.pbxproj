@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E47284DA2E28E68F00CA1CA0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E47284D92E28E68F00CA1CA0 /* README.md */; };
+		E47284E02E28EC1A00CA1CA0 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E47284DF2E28EC1A00CA1CA0 /* Config.xcconfig */; };
+		E47284E42E28EC5E00CA1CA0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E47284E32E28EC5E00CA1CA0 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E43E44F42E28D8D9004EF0D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +33,9 @@
 		E43E44E62E28D8D8004EF0D4 /* StarPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43E44F32E28D8D9004EF0D4 /* StarPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43E44FD2E28D8D9004EF0D4 /* StarPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47284D92E28E68F00CA1CA0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E47284DF2E28EC1A00CA1CA0 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		E47284E32E28EC5E00CA1CA0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +84,9 @@
 		E43E44DD2E28D8D8004EF0D4 = {
 			isa = PBXGroup;
 			children = (
+				E47284D92E28E68F00CA1CA0 /* README.md */,
+				E47284DF2E28EC1A00CA1CA0 /* Config.xcconfig */,
+				E47284E32E28EC5E00CA1CA0 /* .gitignore */,
 				E43E44E82E28D8D8004EF0D4 /* StarPicker */,
 				E43E44F62E28D8D9004EF0D4 /* StarPickerTests */,
 				E43E45002E28D8D9004EF0D4 /* StarPickerUITests */,
@@ -187,11 +199,12 @@
 				};
 			};
 			buildConfigurationList = E43E44E12E28D8D8004EF0D4 /* Build configuration list for PBXProject "StarPicker" */;
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				ko,
+				en,
 			);
 			mainGroup = E43E44DD2E28D8D8004EF0D4;
 			minimizedProjectReferenceProxies = 1;
@@ -212,6 +225,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E47284E42E28EC5E00CA1CA0 /* .gitignore in Resources */,
+				E47284E02E28EC1A00CA1CA0 /* Config.xcconfig in Resources */,
+				E47284DA2E28E68F00CA1CA0 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +345,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -386,6 +403,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -400,6 +418,7 @@
 				DEVELOPMENT_TEAM = FCQD35AW5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -412,9 +431,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.song.StarPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -428,6 +452,7 @@
 				DEVELOPMENT_TEAM = FCQD35AW5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -440,9 +465,14 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.song.StarPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

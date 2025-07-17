@@ -11,7 +11,7 @@ import SwiftUI
 struct StarPickerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StarListScene()
         }
     }
 }
