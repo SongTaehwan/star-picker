@@ -1,7 +1,28 @@
 {
   "sourceLanguage" : "ko",
   "strings" : {
+    "button" : {
+
+    },
+    "COVER" : {
+
+    },
+    "dismiss" : {
+
+    },
+    "fullscreencover" : {
+
+    },
     "Hello, World!" : {
+
+    },
+    "modal" : {
+
+    },
+    "MODAL" : {
+
+    },
+    "popToRoot" : {
 
     }
   },

@@ -8,6 +8,6 @@
 import Foundation
 
 /// Astronomy Picture of the Day
-struct Apod {
-    
+struct Apod: Identifiable, Hashable {
+    let id: String
 }

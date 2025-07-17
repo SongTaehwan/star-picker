@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct StarPickerApp: App {
+    @StateObject private var coordinator: AppCoordinator
+    
+    init() {
+        let container = AppContainer()
+        self._coordinator = .init(wrappedValue: container.makeAppCoordinator())
+    }
+    
     var body: some Scene {
         WindowGroup {
-            StarListScene()
+            AppEntryView(coordinator: coordinator)
         }
     }
 }
