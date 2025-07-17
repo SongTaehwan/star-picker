@@ -36,6 +36,7 @@
 		E47284D92E28E68F00CA1CA0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E47284DF2E28EC1A00CA1CA0 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		E47284E32E28EC5E00CA1CA0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E47284E72E28EE2300CA1CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -86,6 +87,7 @@
 			children = (
 				E47284D92E28E68F00CA1CA0 /* README.md */,
 				E47284DF2E28EC1A00CA1CA0 /* Config.xcconfig */,
+				E47284E72E28EE2300CA1CA0 /* Info.plist */,
 				E47284E32E28EC5E00CA1CA0 /* .gitignore */,
 				E43E44E82E28D8D8004EF0D4 /* StarPicker */,
 				E43E44F62E28D8D9004EF0D4 /* StarPickerTests */,
@@ -287,6 +289,7 @@
 /* Begin XCBuildConfiguration section */
 		E43E45052E28D8D9004EF0D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47284DF2E28EC1A00CA1CA0 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -352,6 +355,7 @@
 		};
 		E43E45062E28D8D9004EF0D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47284DF2E28EC1A00CA1CA0 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -418,6 +422,7 @@
 				DEVELOPMENT_TEAM = FCQD35AW5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarPicker/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -452,6 +457,7 @@
 				DEVELOPMENT_TEAM = FCQD35AW5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarPicker/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
